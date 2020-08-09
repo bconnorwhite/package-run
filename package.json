@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@bconnorwhite/exec": "^3.0.3",
-    "preferred-pm": "^3.0.1"
+    "@bconnorwhite/package": "^2.1.1"
   },
   "devDependencies": {
     "@bconnorwhite/bob": "^1.6.0",

@@ -1,13 +1,14 @@
-import getPreferred from "preferred-pm";
+import { getPackageManagerName } from "@bconnorwhite/package";
 import exec, { Command } from "@bconnorwhite/exec";
 
-const run = ({ command, args = [], flags, env }: Command) => {
-  const { name } = (getPreferred(process.cwd()) ?? { name: "yarn" });
-  return exec({
-    command: name,
-    args: ["run", command].concat(args),
-    flags,
-    env
+const run = async ({ command, args = [], flags, env }: Command) => {
+  return getPackageManagerName().then((name) => {
+    return exec({
+      command: name ?? "yarn",
+      args: ["run", command].concat(args),
+      flags,
+      env
+    });
   });
 }
 

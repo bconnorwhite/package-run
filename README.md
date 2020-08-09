@@ -2,7 +2,7 @@
 Programmatically run package.json scripts. Supports yarn, npm, and pnpm.
 
 ```ts
-run(command: Command) => SpawnSyncReturns<Buffer>
+run(command: Command) => Promise<SpawnSyncReturns<Buffer>>
 
 type Command = {
   command: string;
