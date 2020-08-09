@@ -1,0 +1,20 @@
+{
+  "name": "package-run",
+  "version": "1.0.0",
+  "description": "Programmatically run package.json scripts. Supports yarn, npm, and pnpm.",
+  "main": "./build/index.js",
+  "author": "Connor White",
+  "license": "MIT",
+  "scripts": {
+    "build": "bob build",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "@bconnorwhite/exec": "^3.0.3",
+    "preferred-pm": "^3.0.1"
+  },
+  "devDependencies": {
+    "@bconnorwhite/bob": "^1.6.0",
+    "@types/node": "^14.0.27"
+  }
+}
