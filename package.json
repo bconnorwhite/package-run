@@ -5,6 +5,10 @@
   "main": "./build/index.js",
   "author": "Connor White",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bconnorwhite/package-run.git"
+  },
   "scripts": {
     "build": "bob build",
     "prepublishOnly": "yarn build"
