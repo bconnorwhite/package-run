@@ -885,10 +885,10 @@
   resolved "https://registry.yarnpkg.com/@bconnorwhite/exec/-/exec-3.0.3.tgz#c4fbb4f247876e43cebe1916cfbd063ef68cde79"
   integrity sha512-NNFS2CcHX82P9jEAoj48Gsv93LaQr9iXcirymygXfQV/KEwSDWkdLZw7OE4cndzcunselYzjTEqa9S3FucdRRg==
 
-"@bconnorwhite/package@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@bconnorwhite/package/-/package-2.2.0.tgz#d08da21c95f35801a34ac3a97ae22c57f84262d6"
-  integrity sha512-R5XpI3dw9QP6j8Awy0RX1dpyfvEgV4hrg0V3C6Xd5Hhyd9gQ4IsnxZdCG92W+hl6tJXHY+6mUcjzC6n/P/MlAg==
+"@bconnorwhite/package@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@bconnorwhite/package/-/package-2.2.1.tgz#c2fee7b8852275adb86fe90bdeb72c9f9218d102"
+  integrity sha512-15UoNTXqQCiOGeGqTIPEu+gjLJ/4VWxB7o9uBAQuEs9iH1Y1Fa4DUoKYWEGWVVKlsNdMTgUb+aGEmJWoE5/1EA==
   dependencies:
     find-workspace-root "^1.0.1"
     path-exists "^4.0.0"
