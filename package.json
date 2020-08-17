@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@bconnorwhite/exec": "^3.0.3",
-    "@bconnorwhite/package": "^2.2.2"
+    "which-pm-lockfile": "^1.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
