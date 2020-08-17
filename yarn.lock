@@ -885,10 +885,10 @@
   resolved "https://registry.yarnpkg.com/@bconnorwhite/exec/-/exec-4.0.0.tgz#c9b714f06ce22b3d95cb4869e2b2de28cfa1afec"
   integrity sha512-yxbJmSiKFPZqlrbwnFzx7dN6Cd5AhMuoApia/6MbDHPVB8ePAS5HJZA9UoQkvOpwuBkbDWjQlu9Fs4alV7a4cg==
 
-"@bconnorwhite/package@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@bconnorwhite/package/-/package-3.0.0.tgz#5678425b232f0a3263b5c90f1aeb7b397c3a1428"
-  integrity sha512-Vx52T2rYyXwpePM4eTLW1ZDvvU0ZEFfNuHaejSv8YwZ61XQHijQWBOq24kmJZDZqJmoQV/qW+zfLQoLcYQDm0g==
+"@bconnorwhite/package@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@bconnorwhite/package/-/package-3.0.1.tgz#731244028a57d4fe789387a7d3ba9dc2dbb332b4"
+  integrity sha512-pDFw/n5953aX9VPeqJ1F3A/+WdU4pQZTDgGUElS6nyqckYwAlMbcgfzIZRC57eRwWrPx197T4D+d513RnyIiXw==
   dependencies:
     find-workspace-root "^1.0.1"
     path-exists "^4.0.0"
@@ -2213,12 +2213,12 @@ util-deprecate@~1.0.1:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
-which-pm-lockfile@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/which-pm-lockfile/-/which-pm-lockfile-1.0.0.tgz#d8c7db4eeccf21b58700c75b32b84329f3e5367d"
-  integrity sha512-+8AWth6e1bei/mCGuj4cT6pF1myYHSiOudqY5FUx7bPBrY8ASMsEoQvJaVY4ytNMFkm7/qSKVfHdWFpPJoI3BA==
+which-pm-lockfile@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/which-pm-lockfile/-/which-pm-lockfile-1.0.1.tgz#b7f79f9b63a4c724233443604122d502b00988a3"
+  integrity sha512-lNqTrS18yv6lHgG/EicmmH5jMsDlR2NXS1OYJdlxVEM0VpaPbJAGh5dKNS6jlof0dL7MfQCCIsQNqzYUV6P4zw==
   dependencies:
-    "@bconnorwhite/package" "^3.0.0"
+    "@bconnorwhite/package" "^3.0.1"
 
 wrappy@1:
   version "1.0.2"
