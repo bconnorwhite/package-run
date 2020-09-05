@@ -16,7 +16,7 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@bconnorwhite/exec": "^4.0.0",
+    "@bconnorwhite/exec": "^5.2.1",
     "which-pm-lockfile": "^1.0.1"
   },
   "devDependencies": {

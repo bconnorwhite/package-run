@@ -1,5 +1,9 @@
 import { getPackageManagerName } from "which-pm-lockfile";
-import exec, { Command } from "@bconnorwhite/exec";
+import exec, { Command, commandToString } from "@bconnorwhite/exec";
+
+export async function getString(command: Command) {
+  return getCommand(command).then(commandToString);
+}
 
 export async function getCommand({ command, args = [], flags, env }: Command): Promise<Command> {
   return getPackageManagerName().then((name) => {

@@ -880,10 +880,13 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@bconnorwhite/exec@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@bconnorwhite/exec/-/exec-4.0.0.tgz#c9b714f06ce22b3d95cb4869e2b2de28cfa1afec"
-  integrity sha512-yxbJmSiKFPZqlrbwnFzx7dN6Cd5AhMuoApia/6MbDHPVB8ePAS5HJZA9UoQkvOpwuBkbDWjQlu9Fs4alV7a4cg==
+"@bconnorwhite/exec@^5.2.1":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@bconnorwhite/exec/-/exec-5.2.1.tgz#78c0cb746a6eaad61d26ffa62f4c851d15ec3a72"
+  integrity sha512-ZJrWtJLtV3gneJx9OKDCf4m9owMX1nmYuT1XeIx5BkRJ6D7do9O/GfS1ftcIRTkA5q++xLYepgKwxd5gOzwpBA==
+  dependencies:
+    parse-json-object "^1.0.0"
+    terminating-newline "^1.2.1"
 
 "@bconnorwhite/package@^3.0.1":
   version "3.0.1"
@@ -1199,6 +1202,11 @@ define-property@^2.0.2:
   dependencies:
     is-descriptor "^1.0.2"
     isobject "^3.0.1"
+
+detect-newline@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.1.0.tgz#576f5dfc63ae1a192ff192d8ad3af6308991b651"
+  integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
 
 electron-to-chromium@^1.3.523:
   version "1.3.526"
@@ -2104,6 +2112,13 @@ supports-color@^5.3.0:
   integrity sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
   dependencies:
     has-flag "^3.0.0"
+
+terminating-newline@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/terminating-newline/-/terminating-newline-1.2.1.tgz#9f0cba6c0b21d9ff8add353fa2bbe8cc5bde3153"
+  integrity sha512-X6++kqBCHPLS/+A3ig+9UMBaTeLy8v0yfhO3jz0ooON/PUpDn83SBZ5VHFWty3Mgi158eCv52EgA6Alkmb0NLA==
+  dependencies:
+    detect-newline "^3.1.0"
 
 to-fast-properties@^2.0.0:
   version "2.0.0"
