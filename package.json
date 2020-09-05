@@ -5,10 +5,19 @@
   "main": "./build/index.js",
   "author": "Connor White",
   "license": "MIT",
+  "homepage": "https://connorwhite.org/github/package-run",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bconnorwhite/package-run.git"
   },
+  "keywords": [
+    "package",
+    "run",
+    "yarn",
+    "npm",
+    "pnpm",
+    "manager"
+  ],
   "scripts": {
     "build": "bob build",
     "prepublishOnly": "yarn build",
