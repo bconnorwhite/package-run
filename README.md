@@ -1,19 +1,12 @@
 # package-run
 Programmatically run package.json scripts. Supports yarn, npm, and pnpm.
 
-```ts
-run(command: Command) => Promise<SpawnSyncReturns<Buffer>>
+## API
 
-type Command = {
-  command: string;
-  args?: string | string[];
-  flags?: Flags;
-  env?: NodeJS.ProcessEnv;
-}
-```
+### Usage
 
 ```ts
-import run from "package-run";
+import run, { getString } from "package-run";
 
 run({
   command: "babel",
@@ -29,4 +22,31 @@ run({
 // yarn run babel ./src --out-dir ./build --config-file ./babel.config.json --watch
 // npm run babel ./src --out-dir ./build --config-file ./babel.config.json --watch
 // pnpm run babel ./src --out-dir ./build --config-file ./babel.config.json --watch
+
+getString({
+  command: "babel",
+  args: ["./src"],
+  flags: {
+    "out-dir": "./build",
+    "config-file": "./babel.config.json",
+    "watch": true
+  }
+});
+
+// "yarn run babel ./src --out-dir ./build --config-file ./babel.config.json --watch"
+```
+
+### Types
+
+```ts
+function run(command: Command): Promise<SpawnSyncReturns<Buffer>>;
+
+function getString(command: Command): Promise<string>;
+
+type Command = {
+  command: string;
+  args?: string | string[];
+  flags?: Flags;
+  env?: NodeJS.ProcessEnv;
+}
 ```
