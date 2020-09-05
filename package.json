@@ -1,6 +1,6 @@
 {
   "name": "package-run",
-  "version": "1.1.7",
+  "version": "1.2.0",
   "description": "Programmatically run package.json scripts. Supports yarn, npm, and pnpm.",
   "main": "./build/index.js",
   "author": "Connor White",
