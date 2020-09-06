@@ -5,6 +5,7 @@ import { removeTerminatingNewline } from "terminating-newline";
 export type RunResult = {
   command?: string;
   runOutput: string;
+  colorRunOutput: string;
 } & ExecResult;
 
 export async function getString(command: Command) {
@@ -27,14 +28,17 @@ export default async function(command: Command) {
   return getCommand(command).then((result) => exec(result).then((execResult) => {
     let command: string | undefined = undefined;
     let runOutput = execResult.output;
+    let colorRunOutput = execResult.colorOutput;
     if(execResult.output.startsWith("$ ")) {
       command = removeTerminatingNewline(execResult.output.slice(2, execResult.output.indexOf("\n")));
-      runOutput = execResult.output.slice(execResult.output.indexOf("\n") + 1)
+      runOutput = execResult.output.slice(execResult.output.indexOf("\n") + 1);
+      colorRunOutput = execResult.output.slice(execResult.output.indexOf("\n") + 1);
     }
     return {
       ...execResult,
       command,
-      runOutput: removeTerminatingNewline(runOutput.replace(infoString, ""))
+      runOutput: removeTerminatingNewline(runOutput.replace(infoString, "")),
+      colorRunOutput: removeTerminatingNewline(runOutput.replace(infoString, ""))
     }
   }));
 }
