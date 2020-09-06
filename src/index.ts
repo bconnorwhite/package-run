@@ -5,13 +5,12 @@ export async function getString(command: Command) {
   return getCommand(command).then(commandToString);
 }
 
-export async function getCommand({ command, args = [], flags, env }: Command): Promise<Command> {
+export async function getCommand(command: Command): Promise<Command> {
   return getPackageManagerName().then((name) => {
     return {
+      ...command,
       command: name ?? "yarn",
-      args: ["run", command].concat(args),
-      flags,
-      env
+      args: ["run", command.command].concat(command.args ?? [])
     };
   });
 }
