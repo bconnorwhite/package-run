@@ -39,7 +39,7 @@ getString({
 ### Types
 
 ```ts
-function run(command: Command): Promise<ExecResult>;
+function run(command: Command): Promise<RunResult>;
 
 function getString(command: Command): Promise<string>;
 
@@ -52,10 +52,12 @@ type Command = {
   silent?: boolean;
 }
 
-type ExecResult = {
+type RunResult = {
   error: string;
   output: string;
   jsonOutput: () => JSONObject | undefined;
   jsonError: () => JSONObject | undefined;
+  command?: string;
+  runOutput: string;
 }
 ```

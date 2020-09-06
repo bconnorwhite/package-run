@@ -1,6 +1,11 @@
 import { getPackageManagerName } from "which-pm-lockfile";
 import exec, { commandToString, Command, ExecResult } from "@bconnorwhite/exec";
 
+export type RunResult = {
+  command?: string;
+  runOutput: string;
+} & ExecResult;
+
 export async function getString(command: Command) {
   return getCommand(command).then(commandToString);
 }
@@ -15,11 +20,23 @@ export async function getCommand(command: Command): Promise<Command> {
   });
 }
 
-const run = async (command: Command) => {
-  return getCommand(command).then((result) => exec(result));
-}
+const infoString = "info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.";
 
-export default run;
+export default async function(command: Command) {
+  return getCommand(command).then((result) => exec(result).then((execResult) => {
+    let command: string = undefined;
+    let runOutput = execResult.output;
+    if(execResult.output.startsWith("$ ")) {
+      command = execResult.output.slice(2, execResult.output.indexOf("\n"));
+      runOutput = execResult.output.slice(execResult.output.indexOf("\n"))
+    }
+    return {
+      ...execResult,
+      command,
+      runOutput: runOutput.replace(infoString, "")
+    }
+  }));
+}
 
 export {
   ExecResult
