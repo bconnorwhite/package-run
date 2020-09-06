@@ -1,5 +1,5 @@
 import { getPackageManagerName } from "which-pm-lockfile";
-import exec, { Command, commandToString } from "@bconnorwhite/exec";
+import exec, { commandToString, Command, ExecResult } from "@bconnorwhite/exec";
 
 export async function getString(command: Command) {
   return getCommand(command).then(commandToString);
@@ -21,3 +21,7 @@ const run = async (command: Command) => {
 }
 
 export default run;
+
+export {
+  ExecResult
+}
