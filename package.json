@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@bconnorwhite/exec": "^5.2.1",
+    "terminating-newline": "^1.2.2",
     "which-pm-lockfile": "^1.0.1"
   },
   "devDependencies": {

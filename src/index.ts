@@ -1,5 +1,6 @@
 import { getPackageManagerName } from "which-pm-lockfile";
 import exec, { commandToString, Command, ExecResult } from "@bconnorwhite/exec";
+import { removeTerminatingNewline } from "terminating-newline";
 
 export type RunResult = {
   command?: string;
@@ -27,13 +28,13 @@ export default async function(command: Command) {
     let command: string = undefined;
     let runOutput = execResult.output;
     if(execResult.output.startsWith("$ ")) {
-      command = execResult.output.slice(2, execResult.output.indexOf("\n"));
+      command = removeTerminatingNewline(execResult.output.slice(2, execResult.output.indexOf("\n")));
       runOutput = execResult.output.slice(execResult.output.indexOf("\n") + 1)
     }
     return {
       ...execResult,
       command,
-      runOutput: runOutput.replace(infoString, "")
+      runOutput: removeTerminatingNewline(runOutput.replace(infoString, ""))
     }
   }));
 }

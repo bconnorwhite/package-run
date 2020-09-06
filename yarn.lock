@@ -4969,6 +4969,13 @@ terminating-newline@^1.2.1:
   dependencies:
     detect-newline "^3.1.0"
 
+terminating-newline@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/terminating-newline/-/terminating-newline-1.2.2.tgz#7411a521bad6972f53ba3a10e9bf25cfd6715e2a"
+  integrity sha512-IGk6ZR6uY3faRGhlWEKMyXmd4Ur1JhZEr9+9FZ1e90hU4qiTADxNoy/jpvuu1myyOcbKvQHhgx9tcQbDRnaHYg==
+  dependencies:
+    detect-newline "^3.1.0"
+
 test-exclude@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/test-exclude/-/test-exclude-6.0.0.tgz#04a8698661d805ea6fa293b6cb9e63ac044ef15e"

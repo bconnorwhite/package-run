@@ -25,5 +25,6 @@ test("run", () => {
   }).then((result) => {
     expect(result.command.slice(-31)).toBe("node_modules/.bin/bob --version");
     expect(result.runOutput[0] !== "\n").toBe(true);
+    expect(result.runOutput[result.runOutput.length-1] !== "\n").toBe(true);
   });
 });
