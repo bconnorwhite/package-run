@@ -25,7 +25,7 @@ const infoString = "info Visit https://yarnpkg.com/en/docs/cli/run for documenta
 
 export default async function(command: Command) {
   return getCommand(command).then((result) => exec(result).then((execResult) => {
-    let command: string = undefined;
+    let command: string | undefined = undefined;
     let runOutput = execResult.output;
     if(execResult.output.startsWith("$ ")) {
       command = removeTerminatingNewline(execResult.output.slice(2, execResult.output.indexOf("\n")));

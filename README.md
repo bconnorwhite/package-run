@@ -55,6 +55,8 @@ type Command = {
 type RunResult = {
   error: string;
   output: string;
+  colorError: string;
+  colorOutput: string;
   jsonOutput: () => JSONObject | undefined;
   jsonError: () => JSONObject | undefined;
   command?: string;

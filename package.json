@@ -25,7 +25,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@bconnorwhite/exec": "^5.2.1",
+    "@bconnorwhite/exec": "^5.3.0",
     "terminating-newline": "^1.2.2",
     "which-pm-lockfile": "^1.0.1"
   },

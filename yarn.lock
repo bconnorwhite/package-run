@@ -1042,13 +1042,22 @@
   resolved "https://registry.yarnpkg.com/@bconnorwhite/exec/-/exec-4.0.0.tgz#c9b714f06ce22b3d95cb4869e2b2de28cfa1afec"
   integrity sha512-yxbJmSiKFPZqlrbwnFzx7dN6Cd5AhMuoApia/6MbDHPVB8ePAS5HJZA9UoQkvOpwuBkbDWjQlu9Fs4alV7a4cg==
 
-"@bconnorwhite/exec@^5.1.0", "@bconnorwhite/exec@^5.2.1":
+"@bconnorwhite/exec@^5.1.0":
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/@bconnorwhite/exec/-/exec-5.2.1.tgz#78c0cb746a6eaad61d26ffa62f4c851d15ec3a72"
   integrity sha512-ZJrWtJLtV3gneJx9OKDCf4m9owMX1nmYuT1XeIx5BkRJ6D7do9O/GfS1ftcIRTkA5q++xLYepgKwxd5gOzwpBA==
   dependencies:
     parse-json-object "^1.0.0"
     terminating-newline "^1.2.1"
+
+"@bconnorwhite/exec@^5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@bconnorwhite/exec/-/exec-5.3.0.tgz#9c5e8359656ebb28b6ba23446a647b439506b584"
+  integrity sha512-nQwBSGsPdPp514/Dp85j/M3oZxe7c0M/3YmNJLOAMWhNsz6U17FcF39nRYa1O+Ez7Gw4IwtNy0sba/s/FrlOGg==
+  dependencies:
+    parse-json-object "^1.0.0"
+    strip-ansi "^6.0.0"
+    terminating-newline "^1.2.2"
 
 "@bconnorwhite/json-types@^1.0.5":
   version "1.0.5"
