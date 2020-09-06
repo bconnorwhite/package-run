@@ -39,7 +39,7 @@ getString({
 ### Types
 
 ```ts
-function run(command: Command): Promise<SpawnSyncReturns<Buffer>>;
+function run(command: Command): Promise<ExecResult>;
 
 function getString(command: Command): Promise<string>;
 
@@ -48,5 +48,14 @@ type Command = {
   args?: string | string[];
   flags?: Flags;
   env?: NodeJS.ProcessEnv;
+  cwd?: string;
+  silent?: boolean;
+}
+
+type ExecResult = {
+  error: string;
+  output: string;
+  jsonOutput: () => JSONObject | undefined;
+  jsonError: () => JSONObject | undefined;
 }
 ```

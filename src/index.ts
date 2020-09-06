@@ -17,9 +17,7 @@ export async function getCommand({ command, args = [], flags, env }: Command): P
 }
 
 const run = async (command: Command) => {
-  return getCommand(command).then((result) => {
-    exec(result);
-  });
+  return getCommand(command).then((result) => exec(result));
 }
 
 export default run;
