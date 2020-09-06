@@ -28,7 +28,7 @@ export default async function(command: Command) {
     let runOutput = execResult.output;
     if(execResult.output.startsWith("$ ")) {
       command = execResult.output.slice(2, execResult.output.indexOf("\n"));
-      runOutput = execResult.output.slice(execResult.output.indexOf("\n"))
+      runOutput = execResult.output.slice(execResult.output.indexOf("\n") + 1)
     }
     return {
       ...execResult,
