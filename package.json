@@ -1,10 +1,9 @@
 {
   "name": "package-run",
   "version": "1.4.1",
-  "description": "Programmatically run package.json scripts. Supports yarn, npm, and pnpm.",
-  "main": "./build/index.js",
-  "author": "Connor White",
+  "description": "Programmatically run package.json scripts",
   "license": "MIT",
+  "author": "Connor White",
   "homepage": "https://connorwhite.org/github/package-run",
   "repository": {
     "type": "git",
@@ -12,28 +11,40 @@
   },
   "keywords": [
     "package",
+    "pkg",
     "run",
     "yarn",
     "npm",
     "pnpm",
-    "manager"
+    "manager",
+    "npx",
+    "bin"
   ],
   "files": [
     "build"
   ],
+  "main": "./build/index.js",
   "scripts": {
     "build": "bob build",
-    "prepublishOnly": "yarn build && yarn test",
+    "lint": "bob lint",
     "postversion": "git push",
+    "prepublishOnly": "yarn build && yarn test",
     "test": "jest"
   },
   "dependencies": {
-    "@bconnorwhite/exec": "^5.3.0",
-    "terminating-newline": "^1.2.2",
+    "@bconnorwhite/exec": "^6.0.3",
+    "as-typed-array": "^1.0.0",
+    "has-script": "^1.0.0",
     "which-pm-lockfile": "^1.0.1"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^1.9.7",
+    "@bconnorwhite/bob": "^2.3.0",
     "jest": "^26.4.2"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-bob"
+  },
+  "npmpackagejsonlint": {
+    "extends": "npm-package-json-lint-config-bob"
   }
 }
