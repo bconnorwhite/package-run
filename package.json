@@ -32,7 +32,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@bconnorwhite/exec": "^6.0.4",
+    "@bconnorwhite/exec": "^6.0.5",
     "as-typed-array": "^1.0.0",
     "has-script": "^1.0.0",
     "which-pm-lockfile": "^1.0.1"
