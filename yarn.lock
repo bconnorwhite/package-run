@@ -1154,7 +1154,7 @@
     write-json-safe "^1.0.0"
     write-md-safe "^1.0.3"
 
-"@bconnorwhite/package@^4.2.5":
+"@bconnorwhite/package@^4.2.5", "@bconnorwhite/package@^4.3.0":
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/@bconnorwhite/package/-/package-4.3.0.tgz#c1b886541eb70dd2ba544fc6aa4d8db4d57a2367"
   integrity sha512-FjUT5Vkhzib1P+J0hsGkz/Q7I63nnwN2fZ1EwkGGXqnNe0uyV8zQMCJskJ5gv1yMB74fxE1v6HxYJ9E87IGMsQ==
@@ -8542,6 +8542,13 @@ which-pm-lockfile@^1.1.0:
   integrity sha512-8zBATqxACFwQVJ2sH8DI3BbLmleBJr4nzdN2klJRNbZYTURZhBY9l0mwvRULTR+e4RIDONA/n82ET6614kxSJA==
   dependencies:
     "@bconnorwhite/package" "^3.0.1"
+
+which-pm-lockfile@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/which-pm-lockfile/-/which-pm-lockfile-1.1.1.tgz#de6548214c7ce56a59aad677647f77c7dff1141f"
+  integrity sha512-YoqXXAvzYJfJ0Cx46LehulG0JqDuLI3HmZ+aWxyKl8fbkfZNnP+2/hlF+NIJ6HeFPAuqiGNLM/YxJBTlPy4KQg==
+  dependencies:
+    "@bconnorwhite/package" "^4.3.0"
 
 which-pm-runs@^1.0.0:
   version "1.0.0"

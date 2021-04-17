@@ -37,7 +37,7 @@
     "@bconnorwhite/exec": "^6.0.7",
     "as-typed-array": "^1.0.0",
     "has-script": "^1.0.0",
-    "which-pm-lockfile": "^1.1.0"
+    "which-pm-lockfile": "^1.1.1"
   },
   "devDependencies": {
     "@bconnorwhite/bob": "^2.9.4",
