@@ -7,7 +7,7 @@
     <img alt="TypeScript" src="https://img.shields.io/github/languages/top/bconnorwhite/package-run.svg">
   </a>
   <a href="https://coveralls.io/github/bconnorwhite/package-run?branch=master">
-    <img alt="Coverage Status" src="https://coveralls.io/repos/github/bconnorwhite/package-run.svg?branch=master">
+    <img alt="Coverage Status" src="https://coveralls.io/repos/github/bconnorwhite/package-run/badge.svg?branch=master">
   </a>
   <a href="https://github.com/bconnorwhite/package-run">
     <img alt="GitHub Stars" src="https://img.shields.io/github/stars/bconnorwhite/package-run?label=Stars%20Appreciated%21&style=social">
