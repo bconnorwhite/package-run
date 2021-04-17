@@ -1,3 +1,12 @@
+## [2.0.6](https://github.com/bconnorwhite/package-run/compare/v2.0.5...v2.0.6) (2021-04-17)
+
+
+### Bug Fixes
+
+* dependency bump ([dca6771](https://github.com/bconnorwhite/package-run/commit/dca677110e935b1671667d99050efc1b5ae6b856))
+
+
+
 ## [2.0.5](https://github.com/bconnorwhite/package-run/compare/v2.0.4...v2.0.5) (2021-04-17)
 
 
