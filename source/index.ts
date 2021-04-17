@@ -5,31 +5,31 @@ import { exec, executableToString as execExecutableToString, Executable, ExecRes
 
 export type RunOptions = {
   silent?: boolean;
-}
+};
 
 function getArgs(args: Arg[], executable: Executable) {
   return args.concat(asArray(executable.command)).concat(asArray(executable.args ?? []));
 }
 
-async function getNPMExecutable(executable: Executable, options: RunOptions): Promise<Executable> {
+async function getNPMExecutable(executable: Executable, options: RunOptions = {}): Promise<Executable> {
   return hasScript(executable.command).then((result) => {
     if(result) {
       return {
         ...executable,
         command: "npm",
         args: getArgs(["run", { slient: options.silent }], executable)
-      }
+      };
     } else {
       return {
         ...executable,
         command: "npx",
         args: getArgs([{ "no-install": true, "quiet": options.silent }], executable)
-      }
+      };
     }
   });
 }
 
-export async function getExecutable(executable: Executable, options: RunOptions): Promise<Executable> {
+export async function getExecutable(executable: Executable, options?: RunOptions): Promise<Executable> {
   return getPackageManagerName().then((name = "yarn") => {
     if(name === "npm") {
       return getNPMExecutable(executable, options);
@@ -37,20 +37,20 @@ export async function getExecutable(executable: Executable, options: RunOptions)
       return {
         ...executable,
         command: name,
-        args: getArgs(["run", { silent: options.silent }], executable)
+        args: getArgs(["run", { silent: options?.silent }], executable)
       };
     }
   });
 }
 
-export async function executableToString(executable: Executable, options: RunOptions = {}) {
+export async function executableToString(executable: Executable, options?: RunOptions) {
   return getExecutable(executable, options).then(execExecutableToString);
 }
 
-export default async function run(executable: Executable, options: RunOptions = {}): Promise<ExecResult> {
+export default async function run(executable: Executable, options?: RunOptions): Promise<ExecResult> {
   return getExecutable(executable, options).then((result) => exec(result));
 }
 
 export {
   ExecResult
-}
+};

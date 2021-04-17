@@ -1,13 +1,16 @@
 <div align="center">
   <h1>package-run</h1>
   <a href="https://npmjs.com/package/package-run">
-    <img alt="npm" src="https://img.shields.io/npm/v/package-run.svg">
+    <img alt="NPM" src="https://img.shields.io/npm/v/package-run.svg">
   </a>
   <a href="https://github.com/bconnorwhite/package-run">
-    <img alt="typescript" src="https://img.shields.io/badge/TypeScript-%F0%9F%91%8D-blue.svg">
+    <img alt="TypeScript" src="https://img.shields.io/github/languages/top/bconnorwhite/package-run.svg">
+  </a>
+  <a href="https://coveralls.io/github/bconnorwhite/package-run?branch=master">
+    <img alt="Coverage Status" src="https://coveralls.io/repos/github/bconnorwhite/package-run.svg?branch=master">
   </a>
   <a href="https://github.com/bconnorwhite/package-run">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/bconnorwhite/package-run?label=Stars%20Appreciated%21&style=social">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/bconnorwhite/package-run?label=Stars%20Appreciated%21&style=social">
   </a>
   <a href="https://twitter.com/bconnorwhite">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/bconnorwhite.svg?label=%40bconnorwhite&style=social">
@@ -16,7 +19,7 @@
 
 <br />
 
-> Programmatically run package.json scripts.
+> Node API for running package.json scripts.
 
 Scripts will automatically run with the correct package manager (yarn, npm, or pnpm) if a lockfile is present.
 
@@ -125,7 +128,6 @@ type RunOptions = {
 <h2>Dev Dependencies<img align="right" alt="David" src="https://img.shields.io/david/dev/bconnorwhite/package-run.svg"></h2>
 
 - [@bconnorwhite/bob](https://www.npmjs.com/package/@bconnorwhite/bob): Bob is a toolkit for TypeScript projects
-- [jest](https://www.npmjs.com/package/jest): Delightful JavaScript Testing.
 
 <br />
 

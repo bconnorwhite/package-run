@@ -1,7 +1,7 @@
 {
   "name": "package-run",
   "version": "2.0.3",
-  "description": "Programmatically run package.json scripts",
+  "description": "Node API for running package.json scripts",
   "license": "MIT",
   "author": "Connor White",
   "homepage": "https://connorwhite.org/github/package-run",
@@ -26,23 +26,29 @@
   "main": "./build/index.js",
   "scripts": {
     "build": "bob build",
+    "commit": "bob commit",
     "lint": "bob lint",
-    "postversion": "git push --follow-tags",
-    "prepublishOnly": "yarn lint && yarn build && yarn test",
-    "test": "jest"
+    "release": "bob release",
+    "test": "bob test"
   },
   "dependencies": {
-    "@bconnorwhite/exec": "^6.0.6",
+    "@bconnorwhite/exec": "^6.0.7",
     "as-typed-array": "^1.0.0",
     "has-script": "^1.0.0",
-    "which-pm-lockfile": "^1.0.1"
+    "which-pm-lockfile": "^1.1.0"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^2.4.2",
-    "jest": "^26.4.2"
+    "@bconnorwhite/bob": "^2.9.4",
+    "@types/mock-fs": "^4.13.0",
+    "mock-fs": "^4.13.0"
   },
   "eslintConfig": {
     "extends": "eslint-config-bob"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "bob lint commit"
+    }
   },
   "npmpackagejsonlint": {
     "extends": "npm-package-json-lint-config-bob"
