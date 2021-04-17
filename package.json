@@ -1,6 +1,6 @@
 {
   "name": "package-run",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Node API for running package.json scripts",
   "license": "MIT",
   "author": "Connor White",
