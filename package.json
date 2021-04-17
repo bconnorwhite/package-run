@@ -18,7 +18,9 @@
     "pnpm",
     "manager",
     "npx",
-    "bin"
+    "bin", 
+    "node",
+    "api"
   ],
   "files": [
     "build"
