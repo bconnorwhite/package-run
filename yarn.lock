@@ -1098,15 +1098,15 @@
     strip-ansi "^6.0.0"
     terminating-newline "^1.2.2"
 
-"@bconnorwhite/exec@^6.0.7":
-  version "6.0.7"
-  resolved "https://registry.yarnpkg.com/@bconnorwhite/exec/-/exec-6.0.7.tgz#c9daaf2140c8800250ba0e2eedd058e82a610ed3"
-  integrity sha512-hRHiw/A/wc7dsS5BnjyQs5oMnXlJv+GpLKRkIgcA+maSITpev661PiUv+hlF61kHlul3/UHw39itOXNIRbTuww==
+"@bconnorwhite/exec@^6.0.8":
+  version "6.0.8"
+  resolved "https://registry.yarnpkg.com/@bconnorwhite/exec/-/exec-6.0.8.tgz#275695e5c78aac33805d494f0eada800fcf719cf"
+  integrity sha512-l5PLfRzO2Kr96kcqZpexP2cYZFuWfu03360rk1CLQ6x7JuFNAGKzFEgTWXlKSRFp6xg58VNAtDQAKKDI4yT/4Q==
   dependencies:
     as-typed-array "^1.0.0"
     cross-spawn "^7.0.3"
     extract-first-json "^1.0.1"
-    strip-ansi "^6.0.0"
+    strip-ansi "6.0.0"
     terminating-newline "^1.2.4"
 
 "@bconnorwhite/json-types@^1.0.5":
@@ -7782,6 +7782,13 @@ stringify-json-object@^1.0.5:
   dependencies:
     types-json "^1.2.2"
 
+strip-ansi@6.0.0, strip-ansi@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.0.tgz#0b1571dd7669ccd4f3e06e14ef1eed26225ae532"
+  integrity sha512-AuvKTrTfQNYNIctbR1K/YGTR1756GycPsg7b9bdV9Duqur4gv6aKqHXah67Z8ImS7WEz5QVcOtlfW2rZEugt6w==
+  dependencies:
+    ansi-regex "^5.0.0"
+
 strip-ansi@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-4.0.0.tgz#a8479022eb1ac368a871389b635262c505ee368f"
@@ -7795,13 +7802,6 @@ strip-ansi@^5.1.0:
   integrity sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==
   dependencies:
     ansi-regex "^4.1.0"
-
-strip-ansi@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.0.tgz#0b1571dd7669ccd4f3e06e14ef1eed26225ae532"
-  integrity sha512-AuvKTrTfQNYNIctbR1K/YGTR1756GycPsg7b9bdV9Duqur4gv6aKqHXah67Z8ImS7WEz5QVcOtlfW2rZEugt6w==
-  dependencies:
-    ansi-regex "^5.0.0"
 
 strip-bom@4.0.0, strip-bom@^4.0.0:
   version "4.0.0"
