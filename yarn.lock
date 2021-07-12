@@ -1098,10 +1098,10 @@
     strip-ansi "^6.0.0"
     terminating-newline "^1.2.2"
 
-"@bconnorwhite/exec@^6.0.8":
-  version "6.0.8"
-  resolved "https://registry.yarnpkg.com/@bconnorwhite/exec/-/exec-6.0.8.tgz#275695e5c78aac33805d494f0eada800fcf719cf"
-  integrity sha512-l5PLfRzO2Kr96kcqZpexP2cYZFuWfu03360rk1CLQ6x7JuFNAGKzFEgTWXlKSRFp6xg58VNAtDQAKKDI4yT/4Q==
+"@bconnorwhite/exec@^6.0.9":
+  version "6.0.9"
+  resolved "https://registry.yarnpkg.com/@bconnorwhite/exec/-/exec-6.0.9.tgz#83533f4a5f77621f26d25b79087c476b78e6698f"
+  integrity sha512-RyotL4mymyxDhMX8dGb0U7DmX73KTG5RGfdOAMq/IzWjYRaCbe2A8Xgnf2yzFuAJ6/WdYAKY0414Iyh5J5D0jw==
   dependencies:
     as-typed-array "^1.0.0"
     cross-spawn "^7.0.3"

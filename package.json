@@ -34,7 +34,7 @@
     "test": "bob test"
   },
   "dependencies": {
-    "@bconnorwhite/exec": "^6.0.8",
+    "@bconnorwhite/exec": "^6.0.9",
     "as-typed-array": "^1.0.0",
     "has-script": "^1.0.0",
     "which-pm-lockfile": "^1.1.1"
