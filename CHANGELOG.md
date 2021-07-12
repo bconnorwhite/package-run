@@ -1,3 +1,13 @@
+## [2.0.8](https://github.com/bconnorwhite/package-run/compare/v2.0.7...v2.0.8) (2021-07-12)
+
+
+### Bug Fixes
+
+* dependency bumps ([346074f](https://github.com/bconnorwhite/package-run/commit/346074f78294befef75e755df90b9f2693fe82cf))
+* typo ([691744c](https://github.com/bconnorwhite/package-run/commit/691744c28e5ff3440728f3e70e2a97a5302aceae))
+
+
+
 ## [2.0.7](https://github.com/bconnorwhite/package-run/compare/v2.0.6...v2.0.7) (2021-06-26)
 
 
