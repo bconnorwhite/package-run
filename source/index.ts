@@ -17,7 +17,7 @@ async function getNPMExecutable(executable: Executable, options: RunOptions = {}
       return {
         ...executable,
         command: "npm",
-        args: getArgs(["run", { slient: options.silent }], executable)
+        args: getArgs(["run", { silent: options.silent }], executable)
       };
     } else {
       return {
