@@ -1,6 +1,6 @@
 import { test, expect, beforeEach, afterEach } from "@jest/globals";
 import mock, { restore } from "mock-fs";
-import { executableToString } from "../source";
+import { executableToString } from "../source/index.js";
 
 beforeEach(() => {
   mock({

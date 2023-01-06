@@ -51,6 +51,6 @@ export default async function run(executable: Executable, options?: RunOptions):
   return getExecutable(executable, options).then((result) => exec(result));
 }
 
-export {
+export type {
   ExecResult
 };
