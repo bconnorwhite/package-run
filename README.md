@@ -14,7 +14,7 @@
 
 <br />
 
-<blockquote align="center">Node API for running package.json scripts.</blockquote>
+<blockquote align="center">Node API for running package.json scripts. Supports yarn, npm, and pnpm.</blockquote>
 
 <br />
 

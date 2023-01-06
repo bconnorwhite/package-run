@@ -1,7 +1,7 @@
 {
   "name": "package-run",
   "version": "3.0.0",
-  "description": "Node API for running package.json scripts",
+  "description": "Node API for running package.json scripts. Supports yarn, npm, and pnpm.",
   "main": ".auto/build/index.js",
   "author": "Connor White",
   "license": "MIT",
