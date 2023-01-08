@@ -1,3 +1,12 @@
+## [3.0.1](https://github.com/bconnorwhite/package-run/compare/v3.0.0...v3.0.1) (2023-01-08)
+
+
+### Bug Fixes
+
+* bump which-pm-lockfile ([b590749](https://github.com/bconnorwhite/package-run/commit/b59074958dcbfbd3aeaf3894e96784527d5a9f25))
+
+
+
 ## [2.0.8](https://github.com/bconnorwhite/package-run/compare/v2.0.7...v2.0.8) (2021-07-12)
 
 
