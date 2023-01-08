@@ -45,11 +45,11 @@
     "@bconnorwhite/exec": "^6.0.12",
     "as-typed-array": "^2.0.0",
     "has-script": "^2.0.0",
-    "which-pm-lockfile": "^2.0.0"
+    "which-pm-lockfile": "^2.0.1"
   },
   "devDependencies": {
     "@types/mock-fs": "^4.13.1",
-    "autorepo": "^0.1.4",
+    "autorepo": "^0.1.7",
     "mock-fs": "^5.2.0"
   },
   "eslintConfig": {
