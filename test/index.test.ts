@@ -16,8 +16,8 @@ beforeEach(() => {
 
 afterEach(restore);
 
-test("executableToString", async (done) => {
-  executableToString({
+test("executableToString", async () => {
+  const string = await executableToString({
     command: "babel",
     args: [
       "./src",
@@ -27,30 +27,24 @@ test("executableToString", async (done) => {
         "watch": true
       }
     ]
-  }).then((string) => {
-    expect(string).toBe("yarn run babel ./src --out-dir ./build --config-file ./babel.config.json --watch");
-    done?.();
   });
+  expect(string).toBe("yarn run babel ./src --out-dir ./build --config-file ./babel.config.json --watch");
 });
 
-test("run", async (done) => {
-  run({
-    command: "bob",
+test("run", async () => {
+  const result = await run({
+    command: "auto",
     args: {
-      version: true
+      help: true
     },
     silent: true
-  }).then((result) => {
-    expect(result.textOutput.split("\n")[0].endsWith("node_modules/.bin/bob --version")).toBe(true);
-    done?.();
   });
+  expect(result.textOutput.split("\n")[0].endsWith("node_modules/.bin/auto --help")).toBe(true);
 });
 
-test("has script", async (done) => {
-  executableToString({
+test("has script", async () => {
+  const string = await executableToString({
     command: "test"
-  }).then((string) => {
-    expect(string).toBe("yarn run test");
-    done?.();
   });
+  expect(string).toBe("yarn run test");
 });

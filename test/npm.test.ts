@@ -17,8 +17,8 @@ beforeEach(() => {
 
 afterEach(restore);
 
-test("executableToString", async (done) => {
-  executableToString({
+test("executableToString", async () => {
+  const string = await executableToString({
     command: "babel",
     args: [
       "./src",
@@ -28,17 +28,13 @@ test("executableToString", async (done) => {
         "watch": true
       }
     ]
-  }).then((string) => {
-    expect(string).toBe("npx --no-install babel ./src --out-dir ./build --config-file ./babel.config.json --watch");
-    done?.();
   });
+  expect(string).toBe("npx --no-install babel ./src --out-dir ./build --config-file ./babel.config.json --watch");
 });
 
-test("has script", async (done) => {
-  executableToString({
+test("has script", async () => {
+  const string = await executableToString({
     command: "test"
-  }).then((string) => {
-    expect(string).toBe("npm run test");
-    done?.();
   });
+  expect(string).toBe("npm run test");
 });
